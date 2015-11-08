@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Main.cshtml";
+}
+
+<div id="qr"></div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#qr").qrcode({ width: 128, height: 128, text: "/mekan/1/masa/1" })
+        });
+    </script>
+}
+

@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Poynex</title>
+</head>
+<body>
+    <div style="margin:10px;">
+        @RenderBody()         
+    </div>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/qrcode.js"></script>
+    <script src="~/Scripts/jquery.qrcode.js"></script>
+    @if (IsSectionDefined("scripts"))
+    {
+        @RenderSection("scripts")
+    }
+</body>
+</html>
