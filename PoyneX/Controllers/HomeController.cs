@@ -11,6 +11,7 @@ namespace PoyneX.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            string test = "commit";
             return View();
         }
     }
